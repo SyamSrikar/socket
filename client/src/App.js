@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import {useEffect, useState} from 'react'
 
 const App=() =>{
-  const socket= io.connect('http://3.135.18.98:8000/')
+  const socket= io.connect('http://localhost:8000/')
 
   const [message,setMessage]=useState('')
   const [messagereceived,setMessagereceived]=useState('')
